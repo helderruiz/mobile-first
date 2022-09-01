@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.menu-hamburguer {
+    width: 48px;
+    height: 48px;
+    background-image: url(../imagens/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+/* Pai */
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     position: relative; /* usei o relative pra sair do static e liberar no filho lista ul a position absolute*/
+}
+/* Filhos */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; /* Agora a lista aparece no topo da linha abaixo */
+    width: 55vw;
+}
+
+/* se o imput for clicado vai abrir a lista */
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container__botao {
+    display: none;
+}
