@@ -70,6 +70,7 @@
     background-color: var(--laranja);
     padding: 1em 2.5em;
     color: var(--branco);
+    font-size: 1em;
     font-weight: 700;
     text-decoration: none;
 }
