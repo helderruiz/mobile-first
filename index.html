@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@300;400;500;700 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -37,5 +39,122 @@
             <a class="container__imagem" href="#"><img src="imagens/Usuario.png" alt="Logo Usuario"></a>
         </div>
     </header>
+
+    <section class="banner">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input class="banner-pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Guia Front-end.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Javascript.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Liderança.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Portugol.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/UX.svg" alt="imagem livro"></div>
+            
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card-descricao">
+                <!-- 1 coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2 coluna -->
+                <img class="descricao__imagem" src="imagens/Angular.svg" alt="imagem Angular">
+            </div>
+            <!-- 2 linha -->
+            <div class="card__botoes">
+                <!-- 1 coluna -->
+                <ul class="botoes">
+                    <li class="botoes__itens"><img src="imagens/Favoritos.svg" alt="imagem Favoritos"></li>
+                    <li class="botoes__itens"><img src="imagens/Sacola.png" alt="imagem sacola"></li>
+                </ul>
+                <!-- 2 coluna -->
+                <a class="botoes__ancora" href="#">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Guia Front-end.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Javascript.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Liderança.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/Portugol.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="imagens/UX.svg" alt="imagem livro"></div>
+            
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card-descricao">
+                <!-- 1 coluna -->
+                <div class="descricao">
+                    <img src="imagens/Estrelinhas.svg" alt="imagem Estrelinhas">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <!-- 2 coluna -->
+                <img class="descricao__imagem" src="imagens/Perfil-escritora 1.svg" alt="imagem Angular">
+            </div>
+            <!-- 2 linha -->
+            <div class="card__botoes">
+                <!-- 1 coluna -->
+                <ul class="botoes">
+                    <li class="botoes__itens"><img src="imagens/Favoritos.svg" alt="imagem Favoritos"></li>
+                    <li class="botoes__itens"><img src="imagens/Sacola.png" alt="imagem Perfil-escritora"></li>
+                </ul>
+                <!-- 2 coluna -->
+                <a class="botoes__ancora" href="#">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+  },
+        });
+    </script>
 </body>
 </html>
