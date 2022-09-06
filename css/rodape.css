@@ -2,7 +2,46 @@ hr {
     margin: 0%;
 }
 
-footer {
+.rodape {
     background-color: var(--branco);
     padding: 1em;
+}
+
+/* Abaixo faz parte da criação do banner 1024px */
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 4em 0;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .rodape h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .lista-rodape-item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista-rodape-link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: .6em;
+    }
+
+    .lista-rodape-titulo {
+        color: var(--cinza-titulo-rodape);
+        font-size: 14px;
+    }
 }

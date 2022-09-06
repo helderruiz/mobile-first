@@ -57,3 +57,60 @@
 .container__botao {
     display: none;
 }
+
+/* Abaixo faz parte da criação do header 1024px, display none so pra aparecer assim que chegar a 1024px */
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+/* media query */
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo-negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+        gap: 1.2em;
+    }
+
+    /*.opcoes-item {
+         padding: 0 1em;
+    } */
+
+    .opcoes__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .icone-favorito-none {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+    
+    .opcoes-categorias:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes-categorias{
+        display: none;
+    }
+}

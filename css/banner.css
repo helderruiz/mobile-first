@@ -34,3 +34,19 @@
     background-repeat: no-repeat;
     background-position: 1em;
 }
+
+/* Abaixo faz parte da criação do banner 1024px */
+
+@media screen and (min-width: 1024px) {
+    .banner-titulo {
+        font-size: 36px;
+    }
+
+    .banner-pesquisa {
+        width: 50%;
+    }
+
+    .banner-pesquisa::placeholder {
+        background-position: 7em;
+    }
+}

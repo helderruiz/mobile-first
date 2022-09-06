@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Poppins:wght@300;400;500;700 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,9 @@
         <div class="container">
             <input class="container__botao" type="checkbox" name="menu" id="menu">
             <label for="menu">
-            <span class="menu-hamburguer container__imagem"></span></label>
+                <span class="menu-hamburguer container__imagem"></span>
+            </label>
+
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item"><a class="lista-menu__link" href="#">PROGRAMAÇÃO</a></li>
@@ -31,10 +34,34 @@
             </ul>
 
             <img class="container__imagem" src="imagens/Logo.png" alt="Logo Alurabooks">
+
+            <!-- Criando parte do html para o media query do header, criação feita depois que terminei para mobile
+                 Para telas de no min 1024px Tablet-->
+            <h1 class="container__titulo"><b class="container__titulo-negrito">Alura</b>Books</h1>
         </div>
 
+            <!-- Continuação do header responsivo para Tablet 1024px MENU -->
+        <ul class="opcoes">
+            <input class="opcoes-categorias" type="checkbox" name="opcoes-menu" id="opcoes-menu">
+            <label for="opcoes-menu">
+                <li class="opcoes-item">CATEGORIAS</li>
+            </label>
+            
+            <!-- copiei a mesma lista do menu hamburguer para colocar na Categorias -->
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a class="lista-menu__link" href="#">PROGRAMAÇÃO</a></li>
+                <li class="lista-menu__item"><a class="lista-menu__link" href="#">FRONT-END</a></li>
+                <li class="lista-menu__item"><a class="lista-menu__link" href="#">INFRAESTRUTURA</a></li>
+                <li class="lista-menu__item"><a class="lista-menu__link" href="#">BUSINESS</a></li>
+                <li class="lista-menu__item"><a class="lista-menu__link" href="#">DESIGN & UX</a></li>
+            </ul>
+
+            <li class="opcoes-item"><a class="opcoes__link" href="#">FAVORITOS</a></li>
+            <li class="opcoes-item"><a class="opcoes__link" href="#">MINHA ESTANTE</a></li>
+        </ul>    
+
         <div class="container">
-            <a class="container__imagem" href="#"><img src="imagens/Favoritos.svg" alt="Logo Favoritos"></a>
+            <a class="container__imagem icone-favorito-none" href="#"><img src="imagens/Favoritos.svg" alt="Logo Favoritos"></a>
             <a class="container__imagem" href="#"><img src="imagens/Sacola.png" alt="Logo sacola"></a>
             <a class="container__imagem" href="#"><img src="imagens/Usuario.png" alt="Logo Usuario"></a>
         </div>
@@ -48,10 +75,11 @@
 
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
+
         <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
+
+            <!-- São as Bolinhas da paginas -->
             <div class="swiper-pagination"></div>
 
             <div class="swiper-wrapper">
@@ -160,15 +188,97 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato-titulo">Fique por dentro das novidades!</h2>
-        <p class="contato-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato-descricao">
+            <h2 class="contato-titulo">Fique por dentro das novidades!</h2>
+            <p class="contato-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input class="contato-email" type="email" placeholder="Cadraste seu e-mail">
     </section>
 
     <hr />
 
-    <footer>
+    <footer class="rodape">
         <h2>Grupo Alura</h2>
+        <!-- contruindo footer 1024px -->
+
+        <!-- Primeira Lista -->
+        <ul class="lista-rodape">
+            <li class="lista-rodape-titulo">EDUCAÇÃO</li>
+            <li class="lista-rodape-item">
+                <img src="imagens/Caelum.svg" alt="">
+                <a class="lista-rodape-link" href="#">Caelum</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/CasaDoCodigo.svg" alt="">
+                <a class="lista-rodape-link" href="#">Casa do Código</a>
+            </li>
+        </ul>
+
+        <!-- Segunda Lista -->
+        <ul class="lista-rodape">
+            <li class="lista-rodape-titulo">EDUCAÇÃO ONLINE</li>
+            <li class="lista-rodape-item">
+                <img src="imagens/Alura.svg" alt="">
+                <a class="lista-rodape-link" href="#">Alura</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/AluraEmpresas.svg" alt="">
+                <a class="lista-rodape-link" href="#">Alura Para Empresas</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/AluraLATAM.svg" alt="">
+                <a class="lista-rodape-link" href="#">Alura LATAM</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/AluraStart.svg" alt="">
+                <a class="lista-rodape-link" href="#">Alura Start</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/MusicDot.svg" alt="">
+                <a class="lista-rodape-link" href="#">MusicDot</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/AluraLingua.svg" alt="">
+                <a class="lista-rodape-link" href="#">Alura Língua</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/PM3.svg" alt="">
+                <a class="lista-rodape-link" href="#">PM3</a>
+            </li>
+        </ul>
+
+        <!-- Terceira Lista -->
+        <ul class="lista-rodape">
+            <li class="lista-rodape-titulo">COMUNIDADE</li>
+            <li class="lista-rodape-item">
+                <img src="imagens/HipstersTech.svg" alt="">
+                <a class="lista-rodape-link" href="#">HipstersTech</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/ScubaDev.svg" alt="">
+                <a class="lista-rodape-link" href="#">ScubaDev</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/LayersTech.svg" alt="">
+                <a class="lista-rodape-link" href="#">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/LikeABoss.svg" alt="">
+                <a class="lista-rodape-link" href="#">Like a Boss</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/CarreiraSemFronteira.svg" alt="">
+                <a class="lista-rodape-link" href="#">Carreira sem Fronteira</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/HipstersJobs.svg" alt="">
+                <a class="lista-rodape-link" href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="lista-rodape-item">
+                <img src="imagens/GUJ.svg" alt="">
+                <a class="lista-rodape-link" href="#">GUJ</a>
+            </li>
+        </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -34,5 +34,26 @@
     background: url(../imagens/Email.svg) no-repeat;
     background-position: left;
     padding-left: 2.5em;
-    
+}
+
+/* Abaixo faz parte da criação do banner 1024px */
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato-titulo {
+        font-size: 24px;
+    }
+
+    .contato-descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato-email {
+        width: 30%;
+    }
 }

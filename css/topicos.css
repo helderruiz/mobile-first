@@ -28,3 +28,15 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+/* Abaixo faz parte da criação do banner 1024px */
+
+@media screen and (min-width: 1024px) {
+    .topicos-titulo {
+        font-size: 24px;
+    }
+
+    .topicos-link {
+        font-size: 24px;
+    }
+}
