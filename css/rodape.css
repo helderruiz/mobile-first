@@ -45,3 +45,12 @@ hr {
         font-size: 14px;
     }
 }
+
+/* Abaixo faz parte da criação do banner 1728px */
+
+@media screen and (min-width: 1728px){
+    .lista-rodape {
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+}

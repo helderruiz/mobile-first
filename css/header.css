@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+/* Alterando o botão menu hamburguer pra mudar de cor */
+.container__botao:checked ~ .container__rotulo > .menu-hamburguer {
+    background-image: url(../imagens/menu_black_24dp\ 1.svg);
+}
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
+}
+
 /* Pai */
 .cabecalho {
     background-color: var(--branco);
@@ -56,6 +64,10 @@
 
 .container__botao {
     display: none;
+}
+
+.opcoes-item {
+    cursor: pointer;
 }
 
 /* Abaixo faz parte da criação do header 1024px, display none so pra aparecer assim que chegar a 1024px */
@@ -112,5 +124,50 @@
 
     .opcoes-categorias{
         display: none;
+    }
+
+    /* Trocando a Cor do fundo quando passa o mouse na categoria */
+    .opcoes-categorias:checked ~ .opcoes__rotulo > .opcoes-item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+    .opcoes-item {
+        padding: 2em 1em;
+    }
+    /* Trocando a cor fundo da lista dentro de categorias quando passa o mouse */
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+    .lista-menu__item:hover > .lista-menu__link {
+       -webkit-text-fill-color: var(--branco);
+       text-decoration: none;
+    }
+}
+
+/* Abaixo faz parte da criação do banner 1728px */
+
+.container_texto {
+    display: none;
+}
+
+@media screen and (min-width: 1728px) {
+    .container_link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        gap: 10px;
+    }
+
+    .cabecalho {
+        padding: 0 2em ;
+    }
+
+    .opcoes {
+        margin-right: 35%;
+    }
+
+    .container_texto {
+        display: block;
     }
 }

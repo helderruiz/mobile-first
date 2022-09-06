@@ -50,3 +50,20 @@
         background-position: 7em;
     }
 }
+
+/* Abaixo faz parte da criação do banner 1728px */
+
+@media screen and (min-width: 1728px) {
+    .banner-pesquisa {
+        width: 35%;
+    }
+
+    .banner-pesquisa::placeholder {
+        background-position: 10em;
+
+    }
+
+    .banner {
+        padding: 6em;
+    }
+}

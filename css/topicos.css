@@ -40,3 +40,11 @@
         font-size: 24px;
     }
 }
+
+/* Abaixo faz parte da criação do banner 1728px */
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 25vw;
+    }
+}

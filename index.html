@@ -20,7 +20,7 @@
 
         <div class="container">
             <input class="container__botao" type="checkbox" name="menu" id="menu">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="menu-hamburguer container__imagem"></span>
             </label>
 
@@ -43,7 +43,7 @@
             <!-- Continuação do header responsivo para Tablet 1024px MENU -->
         <ul class="opcoes">
             <input class="opcoes-categorias" type="checkbox" name="opcoes-menu" id="opcoes-menu">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
                 <li class="opcoes-item">CATEGORIAS</li>
             </label>
             
@@ -61,9 +61,20 @@
         </ul>    
 
         <div class="container">
-            <a class="container__imagem icone-favorito-none" href="#"><img src="imagens/Favoritos.svg" alt="Logo Favoritos"></a>
-            <a class="container__imagem" href="#"><img src="imagens/Sacola.png" alt="Logo sacola"></a>
-            <a class="container__imagem" href="#"><img src="imagens/Usuario.png" alt="Logo Usuario"></a>
+            <a class="container__imagem icone-favorito-none" href="#">
+                <img src="imagens/Favoritos.svg" alt="Logo Favoritos">
+            </a>
+
+            <a class="container__imagem container_link" href="#">
+                <img src="imagens/Sacola.png" alt="Logo sacola">
+                <!-- layout 1728px -->
+                <p class="container_texto">Minha sacola</p>
+            </a>
+
+            <a class="container__imagem container_link" href="#">
+                <img src="imagens/Usuario.png" alt="Logo Usuario">
+                <p class="container_texto">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -77,6 +88,7 @@
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
 
         <!-- Slider main container -->
+    <div class="carrossel__container"> <!-- criando essa div para 1728px para ela ser pai do carrossel e do card -->
         <div class="swiper">
 
             <!-- São as Bolinhas da paginas -->
@@ -121,11 +133,13 @@
                 <a class="botoes__ancora" href="#">Saiba mais</a>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="carrossel">
         <h2 class="carrossel-titulo">Mais vendidos</h2>
         <!-- Slider main container -->
+    <div class="carrossel__container"> <!-- criando essa div para 1728px para ela ser pai do carrossel e do card -->
         <div class="swiper">
             <!-- Additional required wrapper -->
             <!-- If we need pagination -->
@@ -171,6 +185,7 @@
                 <a class="botoes__ancora" href="#">Saiba mais</a>
             </div>
         </div>
+    </div>    
     </section>
 
     <section class="topicos">
